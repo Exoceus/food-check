@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,400;0,600;1,700&display=swap");
+
+:root {
+  --blue: #005daa;
+  --white: #ffffff;
+  --yellow: #ffd000;
+  --light-blue: #80aed4;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: var(--blue);
+  font-size: 3rem;
+}
+
+.text-area-container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: bottom;
+}
+
+.food-text-input {
+  font-family: "Archivo", sans-serif;
+  border: none;
+  border-bottom: 2px solid var(--light-blue);
+  outline: none;
+  font-size: 1.25rem;
+  margin: 0 1rem 0 0;
+}
+
+.submit-btn {
+  font-size: 1.25rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 5rem;
+  padding: 0.35rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.redirect-link {
+  margin: 1rem 0 0 0;
+  background-color: var(--yellow);
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5rem;
+  padding: 0.35rem 1.5rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-icon {
+  color: var(--blue);
+  margin: 0 0.5rem 0 0;
+}
+
+.food-type-dropdown {
+  font-size: 1.25rem;
+  font-family: "Archivo", sans-serif;
+  color: var(--light-blue);
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.food-type-dropdown option {
+  font-size: 1rem;
+  color: black;
+}
+
+.success-msg {
+  margin: 2rem 0 1rem 0;
+}
+
+.food-result {
+  margin: 2rem 0 1rem 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+}
+
+.food-result-icon {
+  margin: 0 auto;
+}
+
+.food-result-text {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .text-area-container {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .food-type-dropdown {
+    border: 2px solid var(--light-blue);
+    border-radius: 50rem;
+    padding: 0.5rem 0.25rem;
+    margin: 0;
+  }
+  .food-text-input {
+    margin: 0;
+  }
+}
