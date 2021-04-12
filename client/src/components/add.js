@@ -18,7 +18,7 @@ function Add() {
 
     console.log(newFood)
 
-    axios.post('http://localhost:5000/api/food/new', newFood)
+    axios.post('/api/food/new', newFood)
         .then((res) => {
             console.log(res)
             setSuccessMsg(`${foodText} has been added to ${foodCategory}!`)

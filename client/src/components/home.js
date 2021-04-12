@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {Link} from "react-router-dom";
 import axios from 'axios';
 
+
 import appetizerImg from "../assets/icons/appetizer.svg"
 import mainCourseImg from "../assets/icons/main course.svg"
 import dessertImg from "../assets/icons/dessert.svg"
@@ -13,7 +14,7 @@ function Home() {
   const [searchResult, setSearchResult] = useState(null)
 
   const onSearch = () => {
-    axios.get('http://localhost:5000/api/food/find', {
+    axios.get('/api/food/find', {
       params: {
           name: foodText.toLowerCase()
       }
