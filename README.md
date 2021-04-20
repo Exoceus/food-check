@@ -11,5 +11,5 @@ Simple food checking app made using the MERN stack
 ### Back-end
 
 server.js is the entry point into the app
-/routes contains all the router routes for the API
+/routes contains all the router routes for the API and
 /models contains the data schemas
